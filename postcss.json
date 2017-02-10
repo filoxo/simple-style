@@ -1,0 +1,13 @@
+{
+    "use": [
+        "postcss-import",
+        "postcss-cssnext",
+        "cssnano"
+    ],
+    "input": "main.css",
+    "output": "dist/main.css",
+    "local-plugins": true,
+    "postcss-cssnext": {
+        "warnForDuplicates": false
+    }
+}
