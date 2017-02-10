@@ -6,8 +6,16 @@
   "repository": "https://github.com/filoxo/simple-style.git",
   "author": "Carlos Filoteo <c.filoteo@live.com>",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "run": "",
+    "postcss": "postcss",
+    "build": "node_modules/postcss-cli/bin/postcss -c postcss.json"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
     "normalize.css": "^5.0.0",
-    "postcss": "^5.2.12"
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.1.0"
   }
 }
