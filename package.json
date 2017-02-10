@@ -1,0 +1,13 @@
+{
+  "name": "simple-style",
+  "version": "0.0.1",
+  "description": "a set of simple styles, create for small project sites, and is customizable.",
+  "main": "index.js",
+  "repository": "https://github.com/filoxo/simple-style.git",
+  "author": "Carlos Filoteo <c.filoteo@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "postcss": "^5.2.12"
+  }
+}
