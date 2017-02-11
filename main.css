@@ -1,1 +1,35 @@
 @import "normalize.css";
+:root {
+    --color-primary: blue;
+    --color-secondary: red;
+    --color-neutral-light: #ddd;
+    --color-neutral-dark: #0d0d0d;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  color: var(--color-neutral-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.313rem; }
+h5 { font-size: 1.125rem; }
+
+.hero {
+  align-items: center;
+  display: flex;
+  height: 12.5em;
+  justify-content: center;
+}
+
+main, .main {
+  max-width: 55em;
+  margin: 0 auto;
+  padding: 2em;
+}
