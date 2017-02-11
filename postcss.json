@@ -9,5 +9,6 @@
     "local-plugins": true,
     "postcss-cssnext": {
         "warnForDuplicates": false
-    }
+    },
+    "map": true
 }
