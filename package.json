@@ -7,7 +7,7 @@
   "author": "Carlos Filoteo <c.filoteo@live.com>",
   "license": "MIT",
   "scripts": {
-    "run": "",
+    "dev": "node_modules/postcss-cli/bin/postcss -c postcss.json -w",
     "postcss": "postcss",
     "build": "node_modules/postcss-cli/bin/postcss -c postcss.json"
   },
