@@ -24,12 +24,28 @@ h5 { font-size: 1.125rem; }
 .hero {
   align-items: center;
   display: flex;
-  height: 12.5em;
+  height: 10em;
   justify-content: center;
 }
 
 main, .main {
   max-width: 55em;
   margin: 0 auto;
-  padding: 2em;
+  padding: 0 1.5em;
 }
+
+a, .link {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: color(var(--color-neutral-dark) l(40%));
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  text-decoration:underline;
+}
+
+p > a, p > .link { text-decoration:underline; }
