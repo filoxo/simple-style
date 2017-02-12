@@ -1,8 +1,8 @@
 @import "normalize.css";
 :root {
-    --color-primary: blue;
-    --color-secondary: red;
-    --color-neutral-light: #ddd;
+    --color-primary: #4484ce;
+    --color-secondary: #e44e40;
+    --color-neutral-light: #eee;
     --color-neutral-dark: #0d0d0d;
 }
 
@@ -77,4 +77,46 @@ a, .link {
 a:hover, .link:hover,
 p > a, p > .link  {
   text-decoration: underline;
+}
+
+.button {
+  appearance: none;
+  background-color: var(--color-neutral-light);
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  padding: .5em 1em;
+  text-align: center;
+  transition: all 500ms;
+}
+.button:hover {
+  color: var(--color-neutral-light);
+  background-color: color(var(--color-neutral-dark) l(+ 20%));
+}
+.button:focus, .button:active {
+  color: var(--color-neutral-light);
+  background-color: color(var(--color-neutral-light) l(- 20%));
+}
+.button.primary {
+  color: var(--color-primary);
+}
+.button.primary:hover {
+  background-color: color(var(--color-primary) l(- 2%));
+  color: var(--color-neutral-light);
+}
+.button.secondary {
+  color: var(--color-secondary);
+}
+.button.secondary:hover {
+  background-color: color(var(--color-secondary) l(- 2%));
+  color: var(--color-neutral-light);
+}
+
+.button.small {
+  font-size: .85rem;
+  padding: .35em .5em;
+}
+.button.large {
+  font-size: 1.15rem;
+  padding: .75em 1.15em;
 }
