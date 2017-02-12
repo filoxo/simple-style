@@ -125,7 +125,7 @@ p > a, p > .link  {
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-left { text-align: left; }
-.text-muted { color: color(var(--neutral-dark) l(+ 20%)); }
+.text-muted { color: color(var(--neutral-dark) l(+ 55%)); }
 .upper { text-transform: uppercase; }
 .lower { text-transform: lowercase; }
 .bold { font-weight: bold; }
