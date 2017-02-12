@@ -121,6 +121,7 @@ p > a, p > .link  {
   padding: .75em 1.15em;
 }
 
+.text-light { color: var(--neutral-light); }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-left { text-align: left; }
