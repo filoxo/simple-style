@@ -6,6 +6,10 @@
     --color-neutral-dark: #0d0d0d;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 html {
   font-size: 1em;
 }
@@ -24,28 +28,48 @@ h5 { font-size: 1.125rem; }
 .hero {
   align-items: center;
   display: flex;
-  height: 10em;
+  height: 12.5em;
   justify-content: center;
 }
 
-main, .main {
-  max-width: 55em;
+main, .main,
+nav, .nav {
   margin: 0 auto;
+  max-width: 55em;
   padding: 0 1.5em;
+}
+
+nav, .nav {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.nav-left {
+  flex-shrink: 1;
+  align-self: flex-start;
+  order: 1;
+}
+.nav-right {
+  flex-shrink: 1;
+  align-self: flex-end;
+  order: 2;
+}
+.nav-item {
+  padding: 1em .5em;
 }
 
 a, .link {
   appearance: none;
   background-color: transparent;
   border: none;
-  color: color(var(--color-neutral-dark) l(40%));
+  color: color(var(--color-neutral-dark) l(60%));
   cursor: pointer;
   padding: 0;
   text-decoration: none;
 }
 
-a:hover, .link:hover {
-  text-decoration:underline;
+a:hover, .link:hover,
+p > a, p > .link  {
+  text-decoration: underline;
 }
-
-p > a, p > .link { text-decoration:underline; }
