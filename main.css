@@ -130,3 +130,13 @@ p > a, p > .link  {
 .lower { text-transform: lowercase; }
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
+
+img.round { border-radius: 50em; }
+img.border { border: 3px solid var(--neutral-light); }
+
+.well {
+  background-color: var(--neutral-light);
+  border-radius: 3px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, .25);
+  padding: .25em;
+}
